@@ -1,0 +1,25 @@
+{
+    "name": "DPD",
+    "courier_code": "dpd",
+    "tracking_numbers": [
+      {
+        "name": "DPD",
+        "regex": [
+          "\\s*(?<SerialNumber>(\\d{14}[A-Z\\d]|\\d{14}|\\d{12}|\\d{10}]))\\s*"
+        ],
+        "validation": {
+        },
+        "tracking_url": "https://tracking.dpd.de/status/en_US/parcel/%s",
+        "test_numbers": {
+          "valid": [
+            "05218962519602",
+            "05228964284282P",
+            "01015134162480"
+          ],
+          "invalid": [
+            "TBB000000000000"
+          ]
+        }
+      }
+    ]
+  }
