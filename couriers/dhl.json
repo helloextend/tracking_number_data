@@ -45,6 +45,25 @@
           "73891051147"
         ]
       }
+    },
+    {
+      "name": "DHL Express 2020",
+      "regex": "\\s*J\\s*V\\s*G\\s*L\\s*(?<SerialNumber>([0-9]\\s*){14})",
+      "validation": {
+        "checksum": {
+          "name": "mod7"
+        }
+      },
+      "tracking_url": "https://www.dhl.com/us-en/home/tracking/tracking-parcel.html?submit=1&tracking-id=%s",
+      "test_numbers": {
+        "valid": [
+          "JVGL05886353495722"
+        ],
+        "invalid": [
+          "73891051149",
+          "73891051147"
+        ]
+      }
     }
   ]
 }
