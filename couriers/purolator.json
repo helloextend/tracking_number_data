@@ -1,0 +1,25 @@
+{
+  "name": "Purolator",
+  "courier_code": "purolator",
+  "tracking_numbers": [
+    {
+      "name": "Purolator",
+      "regex": [
+        "\\s*(?<SerialNumber>([A-Z]{3}\\d{9})|\\d{12}|\\d{10})\\s*"
+      ],
+      "validation": {},
+      "tracking_url": "https://www.purolator.com/en/shipping/tracker?pin=%s",
+      "test_numbers": {
+        "valid": [
+          "DCD999999999",
+          "0000000000",
+          "99999999999"
+        ],
+        "invalid": [
+          "9989999",
+          "DD9999999999"
+        ]
+      }
+    }
+  ]
+}
