@@ -1,0 +1,23 @@
+{
+  "name": "Bring",
+  "courier_code": "bring",
+  "tracking_numbers": [
+    {
+      "name": "DPD",
+      "regex": [
+        "\\s*(?<SerialNumber>(3\\d{17}|07\\d{16}|7\\d{16}|[a-zA-Z]{2}\\d{9}[a-zA-Z]{2}))\\s*"
+      ],
+      "validation": {
+      },
+      "tracking_url": "https://tracking.bring.com/tracking/%s",
+      "test_numbers": {
+        "valid": [
+          "070400500051090146"
+        ],
+        "invalid": [
+          "TBB000000000000"
+        ]
+      }
+    }
+  ]
+}
