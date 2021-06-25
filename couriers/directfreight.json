@@ -1,0 +1,16 @@
+{
+  "name": "Direct Freight",
+  "courier_code": "direct freight",
+  "tracking_numbers": [
+    {
+      "name": "DirectFreight",
+      "regex": ["\\s*(?<SerialNumber>(^[0-9]{1,13}$))\\s*"],
+      "validation": {},
+      "tracking_url": "http://www.directfreight.com.au/ConsignmentStatus.aspx?consignment_no=%s&lookuptype=0",
+      "test_numbers": {
+        "valid": ["4343911004591"],
+        "invalid": ["1234567890123"]
+      }
+    }
+  ]
+}
