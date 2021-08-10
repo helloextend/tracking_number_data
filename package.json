@@ -1,6 +1,6 @@
 {
-  "name": "tracking_number_data",
-  "version": "1.0.1",
+  "name": "@elastic-internal/tracking_number_data",
+  "version": "1.0.1-elastic",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jkeen/tracking_number_data.git"
